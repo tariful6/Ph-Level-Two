@@ -12,3 +12,23 @@
 // we use hare neondb database.
 
 //  npm i dotenv
+
+// modular file system -----------------
+// business logic > services
+// req res > controler
+//
+
+
+
+// start work > server > service > controller > routes
+
+// npm i bcryptjs
+// npm install jsonwebtoken
+// import jwt from 'jsonwebtoken'; 
+// npm i --save-dev @types/jsonwebtoken
+
+ 
+// http://localhost:5000/users { "name" : "ab",  "role" : "admin",  "email" : "ab", "password" : "123456"} post
+// http://localhost:5000/todos {"user_id" : 1, "title" : "abcd"}
+// http://localhost:5000/auth/login {   "email" : "abb",   "password" : "123456"} post 
+// note - before get user add user..
