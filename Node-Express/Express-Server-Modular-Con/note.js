@@ -28,6 +28,9 @@
 //     res.status(200).json({message : "This is root route", path : req.path})
 // })
 
+
+
+
 // Postgase db setup in server.ts and pst user ===================================
 // npm i pg
 // npm i --save-dev @types/pg
@@ -110,6 +113,7 @@
 // create user.controller.ts file in  user folder -------------------------------------------------------
 // create a > const variable in user.controller.ts > const createUserController = 
 // cut all async codes from user.routes.ts and use those code in user.controller.ts file.
+
 // import { Request, Response } from "express";
 // import { pool } from "../../database/db";
 // const createUserController = async(req:Request, res:Response)=>{
@@ -147,6 +151,8 @@
 // const createUserIntoDB = async(payload : Record<string, unknown>)=>{
 //             const {name, email, password} = payload;
 
+
+
 //             const result = await pool.query(`
 //                 INSERT INTO users(name, email, password) VALUES($1,$2,$3) RETURNING *`,
 //                 [name, email, password])
@@ -159,9 +165,10 @@
 // goto user.controller.ts page and import >  userServices.createUserIntoDB & give parameter  -------------
 // const result = await userServices.createUserIntoDB(req.body)
 
-
-// Password hashing ======================================================================================
+// ******** ------------------ ******* ----------- ******* ------------ ******** ---------------- *******
+// Password hashing ===============================================================================
 // npm i bcryptjs
+
 // use this in user.service file --------------------------------------------------------------------------
 // import bcrypt from "bcryptjs";
 // import { pool } from "../../database/db";
@@ -180,7 +187,9 @@
 //     createUserIntoDB
 // }
 
-// middleware authentication ======================================================================================
+
+
+// Middleware authentication ==========================================================================
 // create a middleware folder in src folder
 // create a verify.ts file in middleware folder.
 
